@@ -73,8 +73,8 @@ const Hero = () => {
 
             <div className="flex gap-2 mt-6">
               <a
-                href="../data/_Kaushik_Jain_.pdf"
-                download="_Kaushik_Jain_.pdf"
+                href="../../public/Kaushik_Jain_Resume.pdf"
+                download="Kaushik_Jain_Resume.pdf"
                 className="px-6 py-3 border border-black hover:bg-red-800 hover:text-white hover:border-red-800 dark:border-white font-medium transition-all duration-300"
               >
                 {userInfo.hero.RESUME}

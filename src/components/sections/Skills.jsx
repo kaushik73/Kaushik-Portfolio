@@ -13,8 +13,23 @@ const Skills = () => {
       <AnimateWrapper inView={inView}>
         {/* =========== SKILLS TITLE =========== */}
         <h4 className="text-4xl font-bold flex justify-center items-center gap-2 mt-20 dark:text-white">
-          <FiCodesandbox className=" text-red-800 dark:text-red-500" />
-          {userInfo.SkillsPage.TECH_I_USE}
+          {/* <FiCodesandbox className=" text-red-800 dark:text-red-500" />
+          {userInfo.SkillsPage.TECH_I_USE} */}
+
+          <AnimateWrapper
+            inView={inView}
+            effect="animate-fade-right"
+            delay="animate-delay-800"
+          >
+            <FiCodesandbox className=" text-red-800 dark:text-red-500" />
+          </AnimateWrapper>
+          <AnimateWrapper
+            inView={inView}
+            effect="animate-fade-left"
+            delay="animate-delay-800"
+          >
+            {userInfo.SkillsPage.TECH_I_USE}{" "}
+          </AnimateWrapper>
         </h4>
         {/* =========== LIST OF SKILLS =========== */}
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-4 mt-8">

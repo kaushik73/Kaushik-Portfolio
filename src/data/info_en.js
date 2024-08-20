@@ -24,7 +24,7 @@ const info_en = {
     name: "Kaushik Jain",
     description:
       "I am a software engineer with expertise in front-end web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
-    photo: "../photo.jpg",
+    photo: "../../../public/images/photo.jpg",
     email: "kaushikjain67890@gmail.com",
     phone: 8955302242,
     github: "https://github.com/kaushik73",
@@ -77,21 +77,21 @@ const info_en = {
       degree: "Bachelor of Technology in Computer Science",
       duration: "2019 - 2023",
       marks: "8.4 CGPA",
-      image: "skit_logo.png",
+      image: "../../../public/images/skit_logo.png",
     },
     {
       school: "Emmanuel Snr. Sr. School",
       degree: "Class 12th (CBSE)",
       duration: "2018 - 2019",
       marks: "84 %",
-      image: "emmanuel_school_logo.jpg",
+      image: "../../../public/images/emmanuel_school_logo.jpg",
     },
     {
       school: "Emmanuel Snr. Sr. School",
       degree: "Class 10th (CBSE)",
       duration: "2016 - 2017",
       marks: "8.2 CGPA",
-      image: "emmanuel_school_logo.jpg",
+      image: "../../../public/images/emmanuel_school_logo.jpg",
     },
   ],
 
@@ -101,7 +101,7 @@ const info_en = {
       position: "Software Engineer",
       company: "In Time Tec",
       duration: "May 2024 - Present",
-      image: "intimetec_logo.png",
+      image: "../../../public/images/intimetec_logo.png",
       descriptions: [
         "Contributing as a front-end developer for MMS with a team of 15+ developers.",
         "Showcasing POC’s to clients for the Web Pages.",
@@ -111,7 +111,7 @@ const info_en = {
       position: "Junior Software Engineer",
       company: "In Time Tec",
       duration: "April 2023 - April 2024",
-      image: "intimetec_logo.png",
+      image: "../../../public/images/intimetec_logo.png",
       descriptions: [
         "Contributed to an app that provides training in child development and education.",
         "Assessment of childcare facilities based on national quality standards.",
@@ -121,14 +121,14 @@ const info_en = {
       position: "Trainee",
       company: "In Time Tec",
       duration: "Jan 2023 - March 2023",
-      image: "intimetec_logo.png",
+      image: "../../../public/images/intimetec_logo.png",
       descriptions: ["Gained practical experience in front-end development."],
     },
     {
       position: "Internship",
       company: "Let’s Grow More",
       duration: "Sep 2022 - Aug 2022",
-      image: "lets_grow_more_logo.jpg",
+      image: "../../../public/images/lets_grow_more_logo.jpg",
       descriptions: [
         "Completed a virtual internship, creating static websites and acquiring fundamental front-end skills.",
       ],
@@ -137,7 +137,7 @@ const info_en = {
       position: "Student Partner",
       company: "StartUp-201",
       duration: "July 2021 - Aug 2021",
-      image: "startup_201_logo.png",
+      image: "../../../public/images/startup_201_logo.png",
       descriptions: [
         "Presented a strategic plan for an Online Food Delivery Business to compete against established industry giants.",
       ],

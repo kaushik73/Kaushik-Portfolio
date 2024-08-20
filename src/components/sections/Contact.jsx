@@ -45,7 +45,7 @@ const Contact = () => {
               <FaFacebook
                 className={`self-center text-lg text-red-800 dark:text-red-500 ${
                   inView
-                    ? "animate-wiggle-more animate-thrice animate-duration-3000"
+                    ? "animate-wiggle-more animate-thrice animate-delay-[2000ms] animate-duration-3000"
                     : ""
                 }`}
               />
@@ -63,7 +63,7 @@ const Contact = () => {
               <FaSquareXTwitter
                 className={`self-center text-lg text-red-800 dark:text-red-500 ${
                   inView
-                    ? "animate-wiggle-more animate-thrice animate-duration-3000"
+                    ? "animate-wiggle-more animate-thrice animate-delay-[2000ms] animate-duration-3000"
                     : ""
                 }`}
               />
@@ -81,7 +81,7 @@ const Contact = () => {
               <FaInstagram
                 className={`self-center text-lg text-red-800 dark:text-red-500 ${
                   inView
-                    ? "animate-wiggle-more animate-thrice animate-duration-3000"
+                    ? "animate-wiggle-more animate-thrice animate-delay-[2000ms] animate-duration-3000"
                     : ""
                 }`}
               />
@@ -99,7 +99,7 @@ const Contact = () => {
               <FaLinkedin
                 className={`self-center text-lg text-red-800 dark:text-red-500 ${
                   inView
-                    ? "animate-wiggle-more animate-thrice animate-duration-3000"
+                    ? "animate-wiggle-more animate-thrice animate-delay-[2000ms] animate-duration-3000"
                     : ""
                 }`}
               />
@@ -118,7 +118,7 @@ const Contact = () => {
               <MdEmail
                 className={`self-center text-lg text-red-800 dark:text-red-500 ${
                   inView
-                    ? "animate-flip-down animate-thrice animate-duration-3000 animate-normal animate-fill-both"
+                    ? "animate-flip-down animate-thrice animate-duration-3000 animate-delay-[2000ms]"
                     : ""
                 }`}
               />
@@ -133,7 +133,7 @@ const Contact = () => {
               <IoCall
                 className={`self-center text-lg text-red-800 dark:text-red-500 ${
                   inView
-                    ? "animate-flip-down animate-thrice animate-duration-3000 animate-normal animate-fill-both"
+                    ? "animate-flip-down animate-thrice animate-duration-3000 animate-delay-[2000ms]"
                     : ""
                 }`}
               />
@@ -147,7 +147,7 @@ const Contact = () => {
               <FaGithub
                 className={`self-center text-lg text-red-800 dark:text-red-500 ${
                   inView
-                    ? "animate-flip-down animate-thrice animate-duration-3000 animate-normal animate-fill-both"
+                    ? "animate-flip-down animate-thrice animate-duration-3000 animate-delay-[2000ms]"
                     : ""
                 }`}
               />
