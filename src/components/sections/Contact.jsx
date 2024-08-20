@@ -37,42 +37,6 @@ const Contact = () => {
         {/* =========== LINKS =========== */}
         <div className="mt-10 flex justify-evenly items-baseline">
           <div className="">
-            {/* =========== FACEBOOK =========== */}
-            <a
-              href={userInfo.socials.facebook}
-              className=" flex gap-4 text-zinc-600 dark:text-zinc-300 hover:dark:text-zinc-300  hover:text-zinc-700 transition-all duration-300"
-            >
-              <FaFacebook
-                className={`self-center text-lg text-red-800 dark:text-red-500 ${
-                  inView
-                    ? "animate-wiggle-more animate-thrice animate-delay-[2000ms] animate-duration-3000"
-                    : ""
-                }`}
-              />
-              <span className="self-center">
-                {" "}
-                {userInfo.contactPage.FOLLOW_ON_FACEBOOK}
-              </span>
-            </a>
-
-            {/* =========== X =========== */}
-            <a
-              href={userInfo.socials.twitter}
-              className="flex gap-4 text-zinc-600 dark:text-zinc-300 hover:dark:text-zinc-300 hover:text-zinc-700 transition-all duration-300 mt-4"
-            >
-              <FaSquareXTwitter
-                className={`self-center text-lg text-red-800 dark:text-red-500 ${
-                  inView
-                    ? "animate-wiggle-more animate-thrice animate-delay-[2000ms] animate-duration-3000"
-                    : ""
-                }`}
-              />
-              <span className="self-center">
-                {" "}
-                {userInfo.contactPage.FOLLOW_ON_X}
-              </span>
-            </a>
-
             {/* =========== INSTAGRAM =========== */}
             <a
               href={userInfo.socials.instagram}
@@ -107,6 +71,21 @@ const Contact = () => {
                 {userInfo.contactPage.FOLLOW_ON_LINKEDIN}
               </span>
             </a>
+
+            {/* =========== Github =========== */}
+            <a
+              href={userInfo.main.github}
+              className="flex mt-6 text-zinc-600 dark:text-zinc-300 hover:dark:text-zinc-300 gap-4 hover:text-zinc-700 transition-all duration-30"
+            >
+              <FaGithub
+                className={`self-center text-lg text-red-800 dark:text-red-500 ${
+                  inView
+                    ? "animate-wiggle-more animate-thrice animate-delay-[2000ms] animate-duration-3000"
+                    : ""
+                }`}
+              />
+              <span>{userInfo.main.github}</span>
+            </a>
           </div>
 
           <div className="">
@@ -138,20 +117,6 @@ const Contact = () => {
                 }`}
               />
               <span>{userInfo.main.phone}</span>
-            </a>
-            {/* =========== Github =========== */}
-            <a
-              href={userInfo.main.github}
-              className="flex mt-6 text-zinc-600 dark:text-zinc-300 hover:dark:text-zinc-300 gap-4 hover:text-zinc-700 transition-all duration-30"
-            >
-              <FaGithub
-                className={`self-center text-lg text-red-800 dark:text-red-500 ${
-                  inView
-                    ? "animate-flip-down animate-thrice animate-duration-3000 animate-delay-[2000ms]"
-                    : ""
-                }`}
-              />
-              <span>{userInfo.main.github}</span>
             </a>
           </div>
         </div>

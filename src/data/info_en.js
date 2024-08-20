@@ -24,7 +24,7 @@ const info_en = {
     name: "Kaushik Jain",
     description:
       "I am a software engineer with expertise in front-end web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
-    photo: "../../../public/images/photo.jpg",
+    photo: "images/photo.jpg",
     email: "kaushikjain67890@gmail.com",
     phone: 8955302242,
     github: "https://github.com/kaushik73",
@@ -33,9 +33,9 @@ const info_en = {
   // ============ SOCIAL LINKS ============
   socials: {
     twitter: "https://twitter.com/dsbalico",
-    github: "https://github.com/dsbalico",
-    linkedin: "https://linkedin.com/in/dsbalico",
-    instagram: "https://instagram.com/dsbalico",
+    github: "https://github.com/kaushik73",
+    linkedin: "https://www.linkedin.com/in/kaushikjain-73/",
+    instagram: "https://www.instagram.com/kaushikk_73/",
     facebook: "https://facebook.com/dsbalico",
   },
 
@@ -77,21 +77,21 @@ const info_en = {
       degree: "Bachelor of Technology in Computer Science",
       duration: "2019 - 2023",
       marks: "8.4 CGPA",
-      image: "../../../public/images/skit_logo.png",
+      image: "images/skit_logo.png",
     },
     {
       school: "Emmanuel Snr. Sr. School",
       degree: "Class 12th (CBSE)",
       duration: "2018 - 2019",
       marks: "84 %",
-      image: "../../../public/images/emmanuel_school_logo.jpg",
+      image: "images/emmanuel_school_logo.jpg",
     },
     {
       school: "Emmanuel Snr. Sr. School",
       degree: "Class 10th (CBSE)",
       duration: "2016 - 2017",
       marks: "8.2 CGPA",
-      image: "../../../public/images/emmanuel_school_logo.jpg",
+      image: "images/emmanuel_school_logo.jpg",
     },
   ],
 
@@ -101,7 +101,7 @@ const info_en = {
       position: "Software Engineer",
       company: "In Time Tec",
       duration: "May 2024 - Present",
-      image: "../../../public/images/intimetec_logo.png",
+      image: "images/intimetec_logo.png",
       descriptions: [
         "Contributing as a front-end developer for MMS with a team of 15+ developers.",
         "Showcasing POC’s to clients for the Web Pages.",
@@ -111,7 +111,7 @@ const info_en = {
       position: "Junior Software Engineer",
       company: "In Time Tec",
       duration: "April 2023 - April 2024",
-      image: "../../../public/images/intimetec_logo.png",
+      image: "images/intimetec_logo.png",
       descriptions: [
         "Contributed to an app that provides training in child development and education.",
         "Assessment of childcare facilities based on national quality standards.",
@@ -121,14 +121,14 @@ const info_en = {
       position: "Trainee",
       company: "In Time Tec",
       duration: "Jan 2023 - March 2023",
-      image: "../../../public/images/intimetec_logo.png",
+      image: "images/intimetec_logo.png",
       descriptions: ["Gained practical experience in front-end development."],
     },
     {
       position: "Internship",
       company: "Let’s Grow More",
       duration: "Sep 2022 - Aug 2022",
-      image: "../../../public/images/lets_grow_more_logo.jpg",
+      image: "images/lets_grow_more_logo.jpg",
       descriptions: [
         "Completed a virtual internship, creating static websites and acquiring fundamental front-end skills.",
       ],
@@ -137,7 +137,7 @@ const info_en = {
       position: "Student Partner",
       company: "StartUp-201",
       duration: "July 2021 - Aug 2021",
-      image: "../../../public/images/startup_201_logo.png",
+      image: "images/startup_201_logo.png",
       descriptions: [
         "Presented a strategic plan for an Online Food Delivery Business to compete against established industry giants.",
       ],
@@ -341,7 +341,7 @@ const info_en = {
   contactPage: {
     GET_IN_TOUCH: "Let's Get in Touch:",
     WAYS_TO_CONNECT_ME: "Ways to Connect with Me",
-    FOLLOW_ON_FACEBOOK: "Follow on ",
+    FOLLOW_ON_FACEBOOK: "Follow on Facebook",
     FOLLOW_ON_X: "Follow on X",
     FOLLOW_ON_INSTA: "Follow on Instagram",
     FOLLOW_ON_LINKEDIN: "Follow on LinkedIn",

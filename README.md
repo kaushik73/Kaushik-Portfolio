@@ -1,47 +1,52 @@
-
-# DSFolio V1
+# Kaushik Porfolio
 
 <center>
-    <img src="/public/cover.png" alt="DSFolio" />
+    <img src="/public/cover.png" alt="Kaushik Jain" />
 </center>
 
 <center>
 
-https://dsfolio-v1.vercel.app/
+kaushik-jain-portfolio.vercel.app
 
 </center>
 
 ## Technologies Used
-<img  src="https://skillicons.dev/icons?i=html,css,react,tailwind,netlify&perline=7"/>
+
+<img  src="https://skillicons.dev/icons?i=html,css,react,tailwind"/>
 
 ## Installation
+
 1. Clone the repository
-    ```bash 
-    git clone https://github.com/dsbalico/dsfolio-v1.git
-    ```
-2. Change into the project directory
-    ```bash
-    cd dsfolio-v1
-    ```
-3. Install dependencies
-    ```bash
-    yarn install 
-    ```
+
+   ```bash
+   git clone https://github.com/kaushik73/Kaushik-Portfolio.git
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
 
 ## Usage
+
 To start the development server and view the project in your browser, run the following command:
+
 ```bash
-yarn dev
+npm run dev
 ```
+
 Visit http://localhost:5173/ in your browser
 
 ## Configurations
-- You can change content of the website at `/data/user_info.js`
+
+- You can change content of the website at `/data` folder
 - Change the Google Analytics MEASUREMENT ID at `index.html` to your own.
 
 ## Contributing
+
 Feel free to contribute to this project by opening issues or submitting pull requests. Your feedback is highly appreciated!
 
 ## Note
+
 - Before deploying this website, please remove or update the Google Analytics MEASUREMENT ID in `index.html`
 - If you find this project useful, consider leaving a star. Thank you! 😊
