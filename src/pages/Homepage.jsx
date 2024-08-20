@@ -30,7 +30,7 @@ const Homepage = () => {
         <ToggleLanguage switchLanguage={switchLanguage} />
         <Hero />
         <Projects />
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <Education />
           <Experience />
         </div>

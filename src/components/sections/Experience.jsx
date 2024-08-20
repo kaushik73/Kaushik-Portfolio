@@ -12,7 +12,7 @@ const Experience = () => {
     <section
       id="section"
       ref={experienceRef}
-      className="mt-20 mx-04 lg:mx-20 flex flex-col md:flex-row gap-4 md:gap-2"
+      className="mt-20 mx-4 lg:mx-20 flex flex-col md:flex-row gap-4 md:gap-2"
     >
       <AnimateWrapper inView={inView} effect="animate-fade-left">
         {/* =========== EXPERIENCE =========== */}

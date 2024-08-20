@@ -24,7 +24,7 @@ const info_hi = {
     name: "कौशिक जैन",
     description:
       "मैं एक सॉफ्टवेयर इंजीनियर हूँ जो फ्रंट-एंड वेब विकास में विशेषज्ञता रखता हूँ। मुझे विभिन्न फ्रेमवर्क और तकनीकों का उपयोग करके मापनीय, सुरक्षित और विश्वसनीय वेब अनुप्रयोग बनाने का अनुभव है। मुझे जटिल समस्याओं को हल करना और नई स्किल्स सीखना पसंद है। मैं उच्च-गुणवत्ता वाले कोड बनाने के लिए प्रतिबद्ध हूँ जो सर्वश्रेष्ठ प्रथाओं और उद्योग मानकों का पालन करता है।",
-    photo: "../photo.jpg",
+    photo: "images/photo.jpg",
     email: "kaushikjain67890@gmail.com",
     phone: 8955302242,
     github: "https://github.com/kaushik73",
@@ -77,21 +77,21 @@ const info_hi = {
       degree: "कंप्यूटर साइंस में बैचलर ऑफ टेक्नोलॉजी",
       duration: "2019 - 2023",
       marks: "8.4 CGPA",
-      image: "skit_logo.png",
+      image: "images/skit_logo.png",
     },
     {
       school: "इमैनुएल सीनियर सेकंडरी स्कूल",
       degree: "कक्षा 12वीं (CBSE)",
       duration: "2018 - 2019",
       marks: "84 %",
-      image: "emmanuel_school_logo.jpg",
+      image: "images/emmanuel_school_logo.jpg",
     },
     {
       school: "इमैनुएल सीनियर सेकंडरी स्कूल",
       degree: "कक्षा 10वीं (CBSE)",
       duration: "2016 - 2017",
       marks: "8.2 CGPA",
-      image: "emmanuel_school_logo.jpg",
+      image: "images/emmanuel_school_logo.jpg",
     },
   ],
 
@@ -101,7 +101,7 @@ const info_hi = {
       position: "सॉफ्टवेयर इंजीनियर",
       company: "इन टाइम टेक",
       duration: "मई 2024 - वर्तमान",
-      image: "intimetec_logo.png",
+      image: "images/intimetec_logo.png",
       descriptions: [
         "15+ डेवलपर्स की टीम के साथ MMS के लिए एक फ्रंट-एंड डेवलपर के रूप में योगदान।",
         "वेब पेजों के लिए ग्राहकों को POC दिखाना।",
@@ -111,7 +111,7 @@ const info_hi = {
       position: "जूनियर सॉफ्टवेयर इंजीनियर",
       company: "इन टाइम टेक",
       duration: "अप्रैल 2023 - अप्रैल 2024",
-      image: "intimetec_logo.png",
+      image: "images/intimetec_logo.png",
       descriptions: [
         "एक ऐप में योगदान दिया जो बाल विकास और शिक्षा में प्रशिक्षण प्रदान करता है।",
         "राष्ट्रीय गुणवत्ता मानकों के आधार पर बाल देखभाल सुविधाओं का आकलन।",
@@ -121,14 +121,14 @@ const info_hi = {
       position: "ट्रैनी",
       company: "इन टाइम टेक",
       duration: "जनवरी 2023 - मार्च 2023",
-      image: "intimetec_logo.png",
+      image: "images/intimetec_logo.png",
       descriptions: ["फ्रंट-एंड विकास में व्यावहारिक अनुभव प्राप्त किया।"],
     },
     {
       position: "इंटर्नशिप",
       company: "लेट्स ग्रो मोर",
       duration: "सितंबर 2022 - अगस्त 2022",
-      image: "lets_grow_more_logo.jpg",
+      image: "images/lets_grow_more_logo.jpg",
       descriptions: [
         "एक वर्चुअल इंटर्नशिप पूरी की, स्थिर वेबसाइटें बनाई और बुनियादी फ्रंट-एंड कौशल प्राप्त किया।",
       ],
@@ -137,7 +137,7 @@ const info_hi = {
       position: "स्टूडेंट पार्टनर",
       company: "स्टार्टअप-201",
       duration: "जुलाई 2021 - अगस्त 2021",
-      image: "startup_201_logo.png",
+      image: "images/startup_201_logo.png",
       descriptions: [
         "स्थापित उद्योग दिग्गजों के साथ प्रतिस्पर्धा करने के लिए एक ऑनलाइन फूड डिलीवरी बिजनेस के लिए एक रणनीतिक योजना प्रस्तुत की।",
       ],

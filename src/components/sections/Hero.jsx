@@ -60,7 +60,6 @@ const Hero = () => {
                 repeat={Infinity}
               />
             </h2>
-
             <p
               className={`mt-4 dark:text-zinc-300 text-base font-light lg:w-[87%] leading-7 ${
                 inView
@@ -73,12 +72,16 @@ const Hero = () => {
 
             <div className="flex gap-2 mt-6">
               <a
-                href="../../public/Kaushik_Jain_Resume.pdf"
+                href="/resume/Kaushik_Jain_Resume.pdf"
                 download="Kaushik_Jain_Resume.pdf"
-                className="px-6 py-3 border border-black hover:bg-red-800 hover:text-white hover:border-red-800 dark:border-white font-medium transition-all duration-300"
+                aria-placeholder="download"
+                className="button-custom px-6 py-3 border border-black hover:bg-red-800
+            hover:text-white hover:border-red-800 dark:border-white font-medium
+            transition-all duration-300"
               >
-                {userInfo.hero.RESUME}
+                <span>{userInfo.hero.RESUME}</span>
               </a>
+
               <a
                 href="#contact"
                 className="px-6 py-3 hover:text-red-800 dark:hover:text-red-500 transition-all duration-300 flex gap-3 hover:gap-4"

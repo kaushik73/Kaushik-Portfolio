@@ -35,7 +35,39 @@ const Contact = () => {
         </p>
 
         {/* =========== LINKS =========== */}
-        <div className="mt-10 flex justify-evenly items-baseline">
+        <div className="mt-10 flex flex-wrap justify-evenly items-baseline">
+          <div className="">
+            {/* =========== EMAIL =========== */}
+            <a
+              href={`mailto:${userInfo.main.email}`}
+              className="flex mt-6 text-zinc-600 dark:text-zinc-300 hover:dark:text-zinc-300 gap-4 hover:text-zinc-700 transition-all duration-3000"
+            >
+              <MdEmail
+                className={`self-center text-lg text-red-800 dark:text-red-500 ${
+                  inView
+                    ? "animate-flip-down animate-thrice animate-duration-3000 animate-delay-1000"
+                    : ""
+                }`}
+              />
+              <span>{userInfo.main.email} </span>
+            </a>
+
+            {/* =========== Phone =========== */}
+            <a
+              href={`tel:${userInfo.main.phone}`}
+              className="flex mt-6 text-zinc-600 dark:text-zinc-300 hover:dark:text-zinc-300 gap-4 hover:text-zinc-700 transition-all duration-30"
+            >
+              <IoCall
+                className={`self-center text-lg text-red-800 dark:text-red-500 ${
+                  inView
+                    ? "animate-flip-down animate-thrice animate-duration-3000 animate-delay-1000"
+                    : ""
+                }`}
+              />
+              <span>{userInfo.main.phone}</span>
+            </a>
+          </div>
+
           <div className="">
             {/* =========== INSTAGRAM =========== */}
             <a
@@ -85,38 +117,6 @@ const Contact = () => {
                 }`}
               />
               <span>{userInfo.main.github}</span>
-            </a>
-          </div>
-
-          <div className="">
-            {/* =========== EMAIL =========== */}
-            <a
-              href={`mailto:${userInfo.main.email}`}
-              className="flex mt-6 text-zinc-600 dark:text-zinc-300 hover:dark:text-zinc-300 gap-4 hover:text-zinc-700 transition-all duration-30"
-            >
-              <MdEmail
-                className={`self-center text-lg text-red-800 dark:text-red-500 ${
-                  inView
-                    ? "animate-flip-down animate-thrice animate-duration-3000 animate-delay-[2000ms]"
-                    : ""
-                }`}
-              />
-              <span>{userInfo.main.email} </span>
-            </a>
-
-            {/* =========== Phone =========== */}
-            <a
-              href={`tel:${userInfo.main.phone}`}
-              className="flex mt-6 text-zinc-600 dark:text-zinc-300 hover:dark:text-zinc-300 gap-4 hover:text-zinc-700 transition-all duration-30"
-            >
-              <IoCall
-                className={`self-center text-lg text-red-800 dark:text-red-500 ${
-                  inView
-                    ? "animate-flip-down animate-thrice animate-duration-3000 animate-delay-[2000ms]"
-                    : ""
-                }`}
-              />
-              <span>{userInfo.main.phone}</span>
             </a>
           </div>
         </div>

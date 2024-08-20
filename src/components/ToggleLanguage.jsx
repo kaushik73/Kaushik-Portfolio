@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SUPPORTED_LANGUAGES } from "../data/helper_data";
 
 const ToggleLanguage = ({ switchLanguage }) => {
@@ -10,12 +10,13 @@ const ToggleLanguage = ({ switchLanguage }) => {
     setSelectedLanguage(selectedLanguage);
     switchLanguage(selectedLanguage);
   };
+
   return (
     <div className="relative">
       {/* =========== Localization =========== */}
-      <div className="hs-tooltip [--placement:bottom] inline">
+      <div className="inline">
         <select
-          className="hs-tooltip-toggle  transition-all duration-300 absolute top-5 right-20 rounded-md"
+          className="transition-all duration-300 absolute top-5 right-20 rounded-md "
           value={selectedLanguage}
           onChange={handleLanguageChange}
         >

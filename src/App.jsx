@@ -17,10 +17,9 @@ const App = () => {
   const [language, setLanguage] = useState(savedLanguage || "en");
 
   useEffect(() => {
-    document.documentElement.className = `bg-esther`;
+    document.documentElement.classList.add("dark"); // by default done for dark
 
     localStorage.setItem("theme", theme);
-    console.log(theme, "selected THEME from APP component");
     localStorage.setItem("language", language);
   }, [theme, language]);
 
