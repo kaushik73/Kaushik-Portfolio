@@ -1,7 +1,7 @@
 # Kaushik Porfolio
 
 <center>
-    <img src="/public/cover.png" alt="Kaushik Jain" />
+    <img src="/public/images/cover.png" alt="Kaushik Jain" />
 </center>
 
 <center>

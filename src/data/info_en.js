@@ -42,31 +42,37 @@ const info_en = {
   // ============ PROJECTS ============
   projects: [
     {
-      title: "Manufacturing Management Suite (MMS)",
+      title: "Netflix Clone",
       description:
-        "A custom percentage indicator improved by 14% with the interactive UI and implementation I provided. Collaborated with a team of 15+ developers, delivering multiple POCs to showcase various ideas.",
-      technologies:
-        "React.js, JavaScript, TypeScript, SQL, HTML, CSS, Tailwind",
-      github: "", // Add GitHub link if available
-      link: "", // Add live project link if available
+        "A Netflix clone that fetches data from the TMDB API, featuring a trailer view, deeply nested recommended movies, reviews, cast profiles, and more, all within a beautifully responsive UI that showcases high-quality images.",
+      technologies: "React, Tailwind, Redux, HTML , CSS ,  Javascript",
+      github: "https://github.com/kaushik73/Netflix-Clone",
+      link: "https://66b8b557a3dcf159d5b48646--movie-drag-8d0296.netlify.app/",
+    },
+    {
+      title: "Meal Recommendation Engine",
+      description:
+        "Developed a console-based, algorithm-driven Recommendation Engine for a cafeteria, designed to enhance food choices for customers based on their preferences. Supports multiple users and adheres to all SOLID principles.",
+      technologies: "SQL, TypeScript",
+      github: "https://github.com/kaushik73/cafeteria-management-system",
+      link: "",
+    },
+    {
+      title: "Youtube Clone",
+      description:
+        "A YouTube clone that fetches live data from the YouTube API, featuring an advanced search engine, a simulated live chat with an add message feature, and support for nested comments up to the nth level.",
+      technologies: "React, Tailwind, Redux , HTML , CSS ,  Javascript",
+      github: "https://github.com/kaushik73/Youtube-Clone",
+      link: "https://youtube-clone-kaushik.vercel.app/",
     },
 
     {
-      title: "RISE India STARS",
+      title: "Password Manager",
       description:
-        "A multi-tenant eCommerce platform with admin panel for product control, cart and user management, and independent website hosting.",
-      technologies: "Node.js, HTML, CSS, Bootstrap",
-      github: "", // Add GitHub link if available
-      link: "", // Add live project link if available
-    },
-
-    {
-      title: "Personalised Meal Recommendation Engine",
-      description:
-        "Developed an algorithm-based Recommendation Engine designed for a cafeteria to enhance food choices for customers based on their preferences.",
-      technologies: "Python, SQL, JavaScript",
-      github: "", // Add GitHub link if available
-      link: "", // Add live project link if available
+        "A Password manager which securely store  passwords in app. Encrypt passwords using a unique key, ensuring they are safe and protected under lock and key. Key is the encryption of the password used to login to Password Manager.",
+      technologies: "React, HTML, CSS, Tailwind , Javascript",
+      github: "https://github.com/kaushik73/Password-Manager/tree/master",
+      link: "https://passwordmanager73.netlify.app/",
     },
   ],
 

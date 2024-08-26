@@ -1,0 +1,2 @@
+disabled hinglish.
+disabled tooltip text on image click

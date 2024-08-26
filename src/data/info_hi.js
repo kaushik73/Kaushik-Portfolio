@@ -39,34 +39,40 @@ const info_hi = {
     facebook: "https://facebook.com/dsbalico",
   },
 
-  // ============ परियोजनाएँ ============
+  // ============ PROJECTS ============
   projects: [
     {
-      title: "मैन्युफैक्चरिंग मैनेजमेंट सूट (MMS)",
+      title: "Netflix Clone",
       description:
-        "एक कस्टम प्रतिशत संकेतक, जो इंटरैक्टिव यूआई और मेरे द्वारा किए गए कार्यान्वयन के साथ 14% बेहतर हुआ। 15+ डेवलपर्स की टीम के साथ सहयोग किया, विभिन्न विचारों को प्रदर्शित करने के लिए कई POCs वितरित किए।",
-      technologies:
-        "React.js, JavaScript, TypeScript, SQL, HTML, CSS, Tailwind",
-      github: "", // GitHub लिंक उपलब्ध हो तो जोड़ें
-      link: "", // लाइव प्रोजेक्ट लिंक उपलब्ध हो तो जोड़ें
+        "A Netflix clone that fetches data from the TMDB API, featuring a trailer view, deeply nested recommended movies, reviews, cast profiles, and more, all within a beautifully responsive UI that showcases high-quality images.",
+      technologies: "React, Tailwind, Redux, HTML , CSS ,  Javascript",
+      github: "https://github.com/kaushik73/Netflix-Clone",
+      link: "https://66b8b557a3dcf159d5b48646--movie-drag-8d0296.netlify.app/",
+    },
+    {
+      title: "Meal Recommendation Engine",
+      description:
+        "Developed a console-based, algorithm-driven Recommendation Engine for a cafeteria, designed to enhance food choices for customers based on their preferences. Supports multiple users and adheres to all SOLID principles.",
+      technologies: "SQL, TypeScript",
+      github: "https://github.com/kaushik73/cafeteria-management-system",
+      link: "",
+    },
+    {
+      title: "Youtube Clone",
+      description:
+        "A YouTube clone that fetches live data from the YouTube API, featuring an advanced search engine, a simulated live chat with an add message feature, and support for nested comments up to the nth level.",
+      technologies: "React, Tailwind, Redux , HTML , CSS ,  Javascript",
+      github: "https://github.com/kaushik73/Youtube-Clone",
+      link: "https://youtube-clone-kaushik.vercel.app/",
     },
 
     {
-      title: "राइज इंडिया स्टार्स",
+      title: "Password Manager",
       description:
-        "उत्पाद नियंत्रण, कार्ट और उपयोगकर्ता प्रबंधन के लिए एक बहु-किरायेदार ईकॉमर्स प्लेटफ़ॉर्म और स्वतंत्र वेबसाइट होस्टिंग के साथ एक प्रशासनिक पैनल।",
-      technologies: "Node.js, HTML, CSS, Bootstrap",
-      github: "", // GitHub लिंक उपलब्ध हो तो जोड़ें
-      link: "", // लाइव प्रोजेक्ट लिंक उपलब्ध हो तो जोड़ें
-    },
-
-    {
-      title: "व्यक्तिगत भोजन अनुशंसा इंजन",
-      description:
-        "ग्राहकों की पसंद के आधार पर खाद्य विकल्पों को बेहतर बनाने के लिए एक कैफेटेरिया के लिए डिज़ाइन किया गया एक एल्गोरिदम आधारित अनुशंसा इंजन विकसित किया।",
-      technologies: "Python, SQL, JavaScript",
-      github: "", // GitHub लिंक उपलब्ध हो तो जोड़ें
-      link: "", // लाइव प्रोजेक्ट लिंक उपलब्ध हो तो जोड़ें
+        "A Password manager which securely store  passwords in app. Encrypt passwords using a unique key, ensuring they are safe and protected under lock and key. Key is the encryption of the password used to login to Password Manager.",
+      technologies: "React, HTML, CSS, Tailwind , Javascript",
+      github: "https://github.com/kaushik73/Password-Manager/tree/master",
+      link: "https://passwordmanager73.netlify.app/",
     },
   ],
 
