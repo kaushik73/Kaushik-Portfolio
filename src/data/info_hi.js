@@ -42,6 +42,15 @@ const info_hi = {
   // ============ PROJECTS ============
   projects: [
     {
+      title: "Dev Tinder",
+      description:
+        "A Tinder-like platform for developers to connect and collaborate on projects. Features include sending connection request, making friends, chatting.",
+
+      technologies: "React, Tailwind, Redux, HTML , CSS ,  Javascript",
+      github: "https://github.com/kaushik73/devTinder-web",
+      link: "https://dev-tinder-web-three.vercel.app/#/",
+    },
+    {
       title: "Netflix Clone",
       description:
         "A Netflix clone that fetches data from the TMDB API, featuring a trailer view, deeply nested recommended movies, reviews, cast profiles, and more, all within a beautifully responsive UI that showcases high-quality images.",
@@ -210,21 +219,16 @@ const info_hi = {
 
   // ============ संपर्क करें ============
   contact: {
-    title: "मेरे साथ संपर्क करें",
-    description:
-      "क्या आपके पास कोई प्रश्न है या आप सहयोग करना चाहते हैं? कृपया संपर्क करने में संकोच न करें।",
-    buttons: [
-      {
-        title: "संदेश भेजें",
-        link: "https://wa.me/918955302242",
-      },
-      {
-        title: "कॉल करें",
-        link: "tel:8955302242",
-      },
-    ],
+    title: "संपर्क करें: मुझसे जुड़ने के तरीके",
+    description: {
+      line1:
+        "मुझसे संपर्क करने में आपकी रुचि के लिए धन्यवाद। मैं आपकी प्रतिक्रिया, प्रश्न और सुझावों का स्वागत करता हूं।",
+      line2:
+        "यदि आपके पास कोई विशिष्ट प्रश्न या टिप्पणी है, तो कृपया मुझे सीधे ईमेल करें।",
+      line3:
+        "आइए जुड़ें और अधिक चर्चा करें, आप नीचे दिए गए सोशल मीडिया लिंक का उपयोग करके मुझसे जुड़ सकते हैं।",
+    },
   },
-
   // ============ SKILLS ============
   skills: [
     {
@@ -359,6 +363,7 @@ const info_hi = {
     FOLLOW_ON_X: "X पर फॉलो करें",
     FOLLOW_ON_INSTA: "इंस्टाग्राम पर फॉलो करें",
     FOLLOW_ON_LINKEDIN: "लिंक्डइन पर फॉलो करें",
+    FOLLOW_ON_GITHUB: "गिटहब पर फॉलो करें",
   },
 
   // ============ FOOTER ============

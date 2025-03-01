@@ -25,15 +25,44 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #991b1b;
+  background: theme("colors.primary"); /* Uses primary color */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: theme("colors.secondary"); /* Uses secondary color */
 }
 
 .skill-button {
   @apply inline-flex items-center justify-between gap-x-2 py-4 px-3 hover:-translate-y-1.5  duration-500 rounded-xl font-medium bg-red-100 text-red-700 dark:bg-red-800 dark:text-gray-300;
+}
+
+/* Light Theme */
+.red-theme {
+  --primary-color: #b91c1c;
+  --secondary-color: #fca5a5;
+  --text-color: #f60c33;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --primary-color: #080808;
+  --secondary-color: #3d3338;
+  --text-color: #f8f7f7;
+}
+
+/* Green Theme */
+.green-theme {
+  --primary-color: #15803d;
+  --secondary-color: #86efac;
+  /* --text-color: #e7eeec; */
+  --text-color: #064e3b;
+}
+
+/* Blue Theme */
+.blue-theme {
+  --primary-color: #1e40af;
+  --secondary-color: #93c5fd;
+  --text-color: #1e3a8a;
 }
 
 @tailwind base;

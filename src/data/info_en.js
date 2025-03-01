@@ -213,8 +213,14 @@ const info_en = {
   // ============ CONTACT ============
   contact: {
     title: "Let's Get in Touch: Ways to Connect with Me",
-    description:
-      "Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at kaushikjain67890@gmail.com. I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Finally, if you prefer to connect on social media, you can connect with me using the social media links below.",
+    description: {
+      line1:
+        "Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions.",
+      line2:
+        "If you have a specific question or comment, please feel free to email me.",
+      line3:
+        "Let's Connect and disscuss more, You can connect with me using the social media links below.",
+    },
   },
 
   // ============ SKILLS ============
@@ -290,11 +296,7 @@ const info_en = {
       name: "Firebase",
       icon: IoLogoFirebase,
     },
-    // {
-    //   id: 15,
-    //   name: "MongoDB",
-    //   icon: DiMongodb,
-    // },
+
     {
       id: 16,
       name: "MySQL",
@@ -347,10 +349,11 @@ const info_en = {
   contactPage: {
     GET_IN_TOUCH: "Let's Get in Touch:",
     WAYS_TO_CONNECT_ME: "Ways to Connect with Me",
-    FOLLOW_ON_FACEBOOK: "Follow on Facebook",
+    FOLLOW_ON_FACEBOOK: "Let's Connect on Facebook",
     FOLLOW_ON_X: "Follow on X",
-    FOLLOW_ON_INSTA: "Follow on Instagram",
-    FOLLOW_ON_LINKEDIN: "Follow on LinkedIn",
+    FOLLOW_ON_INSTA: "Let's Connect on Instagram",
+    FOLLOW_ON_LINKEDIN: "Let's Connect on LinkedIn",
+    FOLLOW_ON_GITHUB: "Let's Connect on Github",
   },
 
   // ============ FOOTER ============

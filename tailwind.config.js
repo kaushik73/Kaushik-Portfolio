@@ -8,6 +8,11 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "var(--primary-color)",
+        secondary: "var(--secondary-color)",
+        text: "var(--text-color)",
+      },
       keyframes: {
         "fade-up": {
           "0%": { opacity: 0, transform: "translateY(300px)" },

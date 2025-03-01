@@ -4,10 +4,4 @@ export const SUPPORTED_LANGUAGES = [
   // { identifier: "hinglish", name: "Hinglish" },
 ];
 
-export const SUPPORTED_THEME_OPTIONS = [
-  "Light",
-  "Dark",
-  "Red",
-  "Green",
-  "Blue",
-];
+export const SUPPORTED_THEME_OPTIONS = ["Dark", "Red", "Green", "Blue"];

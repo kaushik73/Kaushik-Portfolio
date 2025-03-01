@@ -19,7 +19,7 @@ const Education = () => {
         <div className="w-full md:w-[80%]">
           {/* =========== EDUCATION TITLE =========== */}
           <h4 className="text-xl dark:text-white mb-4 font-bold flex gap-2 items-center ">
-            <FaLandmark className="text-xl text-red-800 dark:text-red-500" />
+            <FaLandmark className="text-xl text-primary" />
             {userInfo.educationPage.EDUCATION}
           </h4>
           <div className="md:h-[480px] md:overflow-y-scroll scroll-smooth">
@@ -29,7 +29,7 @@ const Education = () => {
                 <div key={index}>
                   {/* =========== DURATION =========== */}
                   <div className="ps-2 my-2 first:mt-0 !mt-2">
-                    <h3 className="text-xs font-medium uppercase text-zinc-500 dark:text-zinc-400">
+                    <h3 className="text-xs font-medium uppercase   text-primary">
                       {edu.duration}
                     </h3>
                   </div>

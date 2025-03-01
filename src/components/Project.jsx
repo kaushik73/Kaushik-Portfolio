@@ -10,12 +10,12 @@ const Project = ({
   VIEW_GITHUB,
 }) => {
   return (
-    <div className="group hover:bg-zinc-100 hover:dark:bg-zinc-900 transition-all duration-300 p-6 border-y mx-2 md:mx-0 md:border-none md:rounded-xl">
+    <div className="group hover:bg-zinc-100 hover:dark:bg-zinc-900 transition-all duration-300 p-6 border-b border-primary mx-2 md:mx-0 md:border-none md:rounded-xl">
       <div className="flex gap-2 overflow-x-scroll py-2 technologies ">
         {/* =========== TECHNOLOGIES USED =========== */}
         {technologies.split(",").map((tech, index) => (
           <span
-            className="cursor-e-resize inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500        group-hover:animate-rotate-y group-hover:animate-once group-hover:animate-duration-700 group-hover:animate-delay-300 group-hover:animate-ease-linear"
+            className="cursor-e-resize inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-secondary text-primary dark:bg-secondary dark:text-secondary group-hover:animate-rotate-y group-hover:animate-once group-hover:animate-duration-700 group-hover:animate-delay-300 group-hover:animate-ease-linear"
             key={index}
           >
             {tech}

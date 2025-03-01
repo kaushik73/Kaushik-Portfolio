@@ -1,4 +1,3 @@
-// import userInfo from "../../data/info_en.js";
 import Project from "../Project.jsx";
 import { HiOutlineCodeBracketSquare } from "react-icons/hi2";
 import { useInView } from "react-hook-inview";
@@ -11,33 +10,31 @@ const Projects = () => {
   const { userInfo } = useContext(AppContext);
 
   return (
-    <section className="" ref={projectsRef}>
+    <section ref={projectsRef} className="py-8">
       <h4
         id="projects"
-        className="text-4xl font-bold flex justify-center items-center gap-2 dark:text-white"
+        className="text-4xl font-bold flex justify-center items-center gap-2 mt-4 "
       >
         <AnimateWrapper inView={inView} effect="animate-fade-right">
-          <HiOutlineCodeBracketSquare className=" text-red-800 dark:text-red-500" />
+          <HiOutlineCodeBracketSquare className="text-text" />
         </AnimateWrapper>
         <AnimateWrapper inView={inView} effect="animate-fade-left">
           {userInfo.projectsPage.PROJECTS}
         </AnimateWrapper>
       </h4>
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:px-16">
-        {userInfo.projects.map((project, index) => {
-          return (
-            <Project
-              key={index}
-              title={project.title}
-              description={project.description}
-              technologies={project.technologies}
-              github={project.github}
-              link={project.link}
-              VIEW_PROJECT={userInfo.projectsPage.VIEW_PROJECT}
-              VIEW_GITHUB={userInfo.projectsPage.VIEW_GITHUB}
-            />
-          );
-        })}
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 px-4 lg:px-16">
+        {userInfo.projects.map((project, index) => (
+          <Project
+            key={index}
+            title={project.title}
+            description={project.description}
+            technologies={project.technologies}
+            github={project.github}
+            link={project.link}
+            VIEW_PROJECT={userInfo.projectsPage.VIEW_PROJECT}
+            VIEW_GITHUB={userInfo.projectsPage.VIEW_GITHUB}
+          />
+        ))}
       </section>
     </section>
   );

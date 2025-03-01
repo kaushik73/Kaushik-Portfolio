@@ -1,47 +1,53 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import NotFound from "./pages/404";
-import { useEffect, useState } from "react";
-import { createContext } from "react";
-import "preline/preline";
+import { useEffect, useState, createContext } from "react";
 import info_en from "./data/info_en";
 import info_hi from "./data/info_hi";
-import info_hinglish from "./data/info_hinglish";
-import { SUPPORTED_LANGUAGES } from "./data/helper_data";
+import {
+  SUPPORTED_LANGUAGES,
+  SUPPORTED_THEME_OPTIONS,
+} from "./data/helper_data";
+
 export const AppContext = createContext();
 
 const App = () => {
-  const savedTheme = localStorage.getItem("theme");
-  const savedLanguage = localStorage.getItem("language");
-  const [theme, setTheme] = useState(savedTheme || "dark");
-  const [language, setLanguage] = useState(savedLanguage || "en");
+  // Retrieve saved preferences from localStorage
+  const savedTheme = localStorage.getItem("theme") || "dark";
+  const savedLanguage = localStorage.getItem("language") || "en";
 
+  const [theme, setTheme] = useState(savedTheme);
+  const [language, setLanguage] = useState(savedLanguage);
+
+  // Apply theme to the document classList
   useEffect(() => {
-    document.documentElement.classList.add("dark"); // by default done for dark
+    document.documentElement.classList.remove(
+      ...SUPPORTED_THEME_OPTIONS.map((t) => t.toLowerCase() + "-theme")
+    );
+    document.documentElement.classList.add(theme.toLowerCase() + "-theme");
 
     localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  // Save language to localStorage
+  useEffect(() => {
     localStorage.setItem("language", language);
-  }, [theme, language]);
+  }, [language]);
 
   const switchTheme = (selectedTheme) => {
-    setTheme(selectedTheme);
-  };
-
-  const switchLanguage = (language) => {
-    setLanguage(language);
-  };
-
-  const getInfoFromLanguage = (language) => {
-    if (language === "en") {
-      return info_en;
-    } else if (language === "hi") {
-      return info_hi;
-    } else if (language === "hinglish") {
-      return info_hinglish;
+    if (SUPPORTED_THEME_OPTIONS.includes(selectedTheme)) {
+      setTheme(selectedTheme);
     }
   };
 
-  let userInfo = getInfoFromLanguage(language);
+  const switchLanguage = (selectedLanguage) => {
+    if (SUPPORTED_LANGUAGES.includes(selectedLanguage)) {
+      setLanguage(selectedLanguage);
+    }
+  };
+
+  const getInfoFromLanguage = (language) =>
+    language === "en" ? info_en : info_hi;
 
   return (
     <AppContext.Provider
@@ -50,7 +56,7 @@ const App = () => {
         switchTheme,
         language,
         switchLanguage,
-        userInfo,
+        userInfo: getInfoFromLanguage(language),
       }}
     >
       <BrowserRouter>
