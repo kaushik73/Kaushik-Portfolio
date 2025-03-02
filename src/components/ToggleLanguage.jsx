@@ -16,7 +16,7 @@ const ToggleLanguage = ({ switchLanguage }) => {
     <div className="relative">
       <div className="inline">
         <select
-          className="transition-all duration-300 absolute top-5 right-24 rounded-md bg-secondary text-text border border-primary p-2"
+          className="transition-all duration-300  rounded-md  text-primary border border-primary p-2"
           value={selectedLanguage}
           onChange={handleLanguageChange}
         >
@@ -24,7 +24,7 @@ const ToggleLanguage = ({ switchLanguage }) => {
             <option
               key={language.identifier}
               value={language.identifier}
-              className="text-text"
+              className="text-primary"
             >
               {language.name}
             </option>

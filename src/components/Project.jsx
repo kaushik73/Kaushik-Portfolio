@@ -10,7 +10,7 @@ const Project = ({
   VIEW_GITHUB,
 }) => {
   return (
-    <div className="group hover:bg-zinc-100 hover:dark:bg-zinc-900 transition-all duration-300 p-6 border-b border-primary mx-2 md:mx-0 md:border-none md:rounded-xl">
+    <div className="group hover:bg-zinc-100  hover:dark:bg-zinc-900 transition-all duration-300 p-6 border-b border-primary mx-2 md:mx-0 md:border-none md:rounded-xl ">
       <div className="flex gap-2 overflow-x-scroll py-2 technologies ">
         {/* =========== TECHNOLOGIES USED =========== */}
         {technologies.split(",").map((tech, index) => (

@@ -14,7 +14,7 @@ const Hero = () => {
       className="pb-28 pt-24 sm:pt-28 md:pt-44 flex px-6 lg:px-24 "
     >
       <div className="self-center">
-        <div className="hs-tooltip [--placement:right] w-20 hs-tooltip-toggle">
+        <div className="hs-tooltip [--placement:right] w-20 hs-tooltip-toggle ">
           <img
             src={userInfo.main.photo}
             className="rounded-full mb-6 lg:hidden border border-secondary"
@@ -90,13 +90,13 @@ const Hero = () => {
 
           {/* =========== IMAGE CONTAINER =========== */}
           <div
-            className="relative hidden lg:block w-[480px] self-center"
+            className="relative hidden lg:block w-[480px] self-center "
             ref={imageRef}
           >
             <span className="h-[500px] w-[2px] absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-0 bg-secondary rounded-full"></span>
 
             <img
-              className={`rounded-[10%] transform border border-primary ${
+              className={`rounded-[10%] transform border border-primary shadow-lg shadow-primary ${
                 inView
                   ? "animate-wiggle animate-twice animate-duration-[1500ms] animate-delay-100 animate-normal animate-fill-forwards"
                   : ""

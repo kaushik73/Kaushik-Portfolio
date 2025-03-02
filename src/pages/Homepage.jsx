@@ -20,9 +20,11 @@ const Homepage = () => {
 
   return (
     <div className="bg-zinc-100 dark:bg-zinc-900">
-      <div className="xl:w-[1200px] md:mx-auto h-full border-x border-zinc-100 dark:border-zinc-800 bg-white dark:bg-zinc-950">
-        <ToggleTheme switchTheme={switchTheme} theme={theme} />
-        <ToggleLanguage switchLanguage={switchLanguage} />
+      <div className="xl:w-[1200px] md:mx-auto h-full border-x border-zinc-100 dark:border-zinc-800 bg-white">
+        <div className="relative flex justify-end  items-center pr-4 mt-4 gap-8">
+          <ToggleTheme switchTheme={switchTheme} theme={theme} />
+          <ToggleLanguage switchLanguage={switchLanguage} />
+        </div>
 
         <Hero />
         <Projects />
