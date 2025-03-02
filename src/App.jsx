@@ -12,14 +12,16 @@ import {
 export const AppContext = createContext();
 
 const App = () => {
-  // Retrieve saved preferences from localStorage
   const savedTheme = localStorage.getItem("theme") || "dark";
   const savedLanguage = localStorage.getItem("language") || "en";
 
+  const getInfoFromLanguage = (language) =>
+    language === "en" ? info_en : info_hi;
+
   const [theme, setTheme] = useState(savedTheme);
   const [language, setLanguage] = useState(savedLanguage);
+  const [userInfo, setUserInfo] = useState(getInfoFromLanguage(savedLanguage));
 
-  // Apply theme to the document classList
   useEffect(() => {
     document.documentElement.classList.remove(
       ...SUPPORTED_THEME_OPTIONS.map((t) => t.toLowerCase() + "-theme")
@@ -29,9 +31,9 @@ const App = () => {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  // Save language to localStorage
   useEffect(() => {
     localStorage.setItem("language", language);
+    setUserInfo(getInfoFromLanguage(language));
   }, [language]);
 
   const switchTheme = (selectedTheme) => {
@@ -41,13 +43,14 @@ const App = () => {
   };
 
   const switchLanguage = (selectedLanguage) => {
-    if (SUPPORTED_LANGUAGES.includes(selectedLanguage)) {
+    if (
+      SUPPORTED_LANGUAGES.map((language) => language.identifier).includes(
+        selectedLanguage
+      )
+    ) {
       setLanguage(selectedLanguage);
     }
   };
-
-  const getInfoFromLanguage = (language) =>
-    language === "en" ? info_en : info_hi;
 
   return (
     <AppContext.Provider
@@ -56,7 +59,7 @@ const App = () => {
         switchTheme,
         language,
         switchLanguage,
-        userInfo: getInfoFromLanguage(language),
+        userInfo,
       }}
     >
       <BrowserRouter>

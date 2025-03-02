@@ -15,7 +15,7 @@ const Project = ({
         {/* =========== TECHNOLOGIES USED =========== */}
         {technologies.split(",").map((tech, index) => (
           <span
-            className="cursor-e-resize inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-secondary text-primary dark:bg-secondary dark:text-secondary group-hover:animate-rotate-y group-hover:animate-once group-hover:animate-duration-700 group-hover:animate-delay-300 group-hover:animate-ease-linear"
+            className="cursor-e-resize inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-secondary text-text dark:bg-secondary dark:text-secondary group-hover:animate-rotate-y group-hover:animate-once group-hover:animate-duration-700 group-hover:animate-delay-300 group-hover:animate-ease-linear"
             key={index}
           >
             {tech}
