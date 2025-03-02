@@ -13,7 +13,7 @@ const Projects = () => {
     <section ref={projectsRef} className="py-8">
       <h4
         id="projects"
-        className="text-4xl font-bold flex justify-center items-center gap-2 mt-4 "
+        className="text-4xl font-bold flex justify-center items-center gap-2 my-2 "
       >
         <AnimateWrapper inView={inView} effect="animate-fade-right">
           <HiOutlineCodeBracketSquare className="text-text" />

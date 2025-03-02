@@ -54,13 +54,6 @@ const Contact = () => {
           </div>
           <div>
             <a
-              href={userInfo.socials.instagram}
-              className="flex gap-4 hover:text-accent transition-all duration-300 mt-4"
-            >
-              <FaInstagram className="self-center text-lg text-primary" />
-              <span>{userInfo.contactPage.FOLLOW_ON_INSTA}</span>
-            </a>
-            <a
               href={userInfo.socials.linkedin}
               className="flex gap-4 hover:text-accent transition-all duration-300 mt-4"
             >
@@ -69,10 +62,17 @@ const Contact = () => {
             </a>
             <a
               href={userInfo.main.github}
-              className="flex mt-6 gap-4 hover:text-accent transition-all duration-300"
+              className="flex mt-4 gap-4 hover:text-accent transition-all duration-300"
             >
               <FaGithub className="self-center text-lg text-primary" />
               <span>{userInfo.contactPage.FOLLOW_ON_GITHUB}</span>
+            </a>
+            <a
+              href={userInfo.socials.instagram}
+              className="flex gap-4 hover:text-accent transition-all duration-300 mt-4"
+            >
+              <FaInstagram className="self-center text-lg text-primary" />
+              <span>{userInfo.contactPage.FOLLOW_ON_INSTA}</span>
             </a>
           </div>
         </div>

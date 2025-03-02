@@ -56,7 +56,7 @@ const Education = () => {
                             {edu.degree}
                           </p>
                           {/* =========== MARKS =========== */}
-                          <p className="font-normal text-xs text-zinc-600 dark:text-zinc-400">
+                          <p className="font-normal text-xs text-zinc  dark:text-zinc-400">
                             {edu.marks}
                           </p>
                         </div>

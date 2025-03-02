@@ -10,7 +10,7 @@ const Project = ({
   VIEW_GITHUB,
 }) => {
   return (
-    <div className="group hover:bg-zinc-100  hover:dark:bg-zinc-900 transition-all duration-300 p-6 border-b border-primary mx-2 md:mx-0 md:border-none md:rounded-xl ">
+    <div className="group hover:bg-zinc-100  hover:dark:bg-zinc-900 transition-all duration-300 p-6 border-b border-primary mx-2 md:mx-0 md:border-y-2 md:rounded-xl md:border-primary ">
       <div className="flex gap-2 overflow-x-scroll py-2 technologies ">
         {/* =========== TECHNOLOGIES USED =========== */}
         {technologies.split(",").map((tech, index) => (
@@ -30,7 +30,7 @@ const Project = ({
       <p className="leading-7 text-zinc-500 dark:text-zinc-300 font-light text-base mt-4">
         {description}
       </p>
-
+      {/* =========== PROJECT LINKS =========== */}
       <div className="flex  gap-6 text-zinc-600 dark:text-zinc-300 font-medium">
         {/* =========== PROJECT GITHUB =========== */}
         {github !== "" && (
@@ -39,7 +39,7 @@ const Project = ({
               href={github}
               className="flex gap-2 mt-4 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300"
             >
-              <CiLink className="text-2xl self-center" />
+              <CiLink className="text-2xl self-center text-primary" />
               <span className="text-xs self-center">{VIEW_GITHUB}</span>
             </a>
           </>
@@ -51,7 +51,7 @@ const Project = ({
             className="flex gap-2 mt-4 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300"
           >
             <>
-              <CiLink className="text-2xl self-center" />
+              <CiLink className="text-2xl self-center text-primary" />
               <span className="text-xs self-center">{VIEW_PROJECT}</span>
             </>
           </a>

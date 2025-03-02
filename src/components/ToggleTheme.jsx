@@ -31,13 +31,12 @@ const ToggleTheme = ({ switchTheme, theme }) => {
       <div className="flex flex-col items-center">
         <button
           onClick={() => setColorPicker((prev) => !prev)}
-          className="relative text-2xl text-primary hover:text-secondary "
+          className="relative"
           aria-label="Theme Mode Button"
         >
           <IoIosColorFilter className="text-primary text-4xl" />
+          <span className="text-xs mt-0 ">Theme</span>
         </button>
-
-        <span className="text-xs mt-1 ">Theme</span>
       </div>
 
       {colorPicker && (
